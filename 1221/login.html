@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ログインページ</title>
+  <meta charset="utf-8" />
+    <link rel="stylesheet" href="./CSS/login.css">
+    <script src="./JS/jquery-2.1.3.js"></script>
+    <script src="./JS/tool.js"></script>
+
+</head>
+<body>
+<div class="wrap">
+<h3>学内掲示板（仮）</h3><br />
+  <!-- <form action="login.php" method="post"> -->
+  <div class="showError"></div>
+  <div class="formPart">
+    <ul>
+      <li class="inputError" id="idError"></li>
+      <li>
+        <span class="txt">ログインID</span>
+      </li>
+      <li>
+        <input id="uid" class="loginForm" type="text" placeholder="ログインID" name="userID"/>
+      </li>
+      <li class="inputError" id="passError"></li>
+      <li>
+        <span class="txt">パスワード</span>
+      </li>
+      <li>
+        <input id="pss" class="loginForm" type="password" placeholder="パスワード" name="password" />
+      </li>
+      <li>
+        <!-- <input class="submitButton" type="submit" value="ログイン" /> -->
+        <input type="button" class="submitButton" onclick="loginCheck()" value="送信">
+      </li>
+    </ul>
+  </div>
+  <!-- </form> -->
+</div>
+</body>
+</html>
